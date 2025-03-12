@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salamanca - Mi Blog</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mi Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="../creadores.html">Creadores</a></li>
+                <li><a href="../contactanos.html">Contáctanos</a></li>
+                <li><a href="../galeria.html">Galería</a></li>
+                <li><a href="../descargar.html">Descargar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="informacion-contacto">
+            <h2>Salamanca</h2>
+           <p>Soy estudiante de Ingeniería en Sistemas Computacionales, apasionado por la tecnología y el 
+           <br>desarrollo de soluciones innovadoras. Me encanta aprender y enfrentar nuevos retos en el mundo 
+           <br>de la informática. Más allá de la ingeniería, mi vida está guiada por mi fe católica cristiana,
+           <br> la música y el ejercicio. Disfruto correr por las mañanas y el fútbol es mi deporte favorito.
+          <p>
+           Siempre estoy en busca de crecimiento personal y profesional, con la convicción de que la constancia y
+           <br> la disciplina son clave para alcanzar cualquier meta</p>
+            <video width="100%" controls>
+                <source src="../imagenes/salamanca.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+
+            <!-- Control de audio -->
+            <div class="audio-control">
+                <audio id="audioSalamanca">
+                    <source src="../imagenes/salamanca_song.mp3" type="audio/mp3">
+                    Tu navegador no soporta el audio.
+                </audio>
+                <button onclick="reproducirAudio()">▶️ Play</button>
+                <button onclick="pausarAudio()">⏸️ Pausa</button>
+            </div>
+
+            <p>
+            <a href="../creadores.html" class="button">Regresar al menú</a>
+        </div>
+    </section>
+
+    <script>
+        const audio = document.getElementById("audioSalamanca");
+
+        function reproducirAudio() {
+            audio.play();
+        }
+
+        function pausarAudio() {
+            audio.pause();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Mi Blog - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

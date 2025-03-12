@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .galeria-imagenes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .galeria-imagenes img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: block;
+            background-color: red; /* Para probar si carga algo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Galería</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="button">Principal</a></li>
+                <li><a href="creadores.html" class="button">Creadores</a></li>
+                <li><a href="contactanos.html" class="button">Contáctanos</a></li>
+                <li><a href="galeria.html" class="button">Galería</a></li>
+                <li><a href="descargar.html" class="button">Descargar PDF</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="galeria">
+        <h2>Explora nuestra Galería</h2>
+        <p>¡Aquí están algunas de las fotos más recientes y divertidas de nuestros creadores y momentos especiales!</p>
+        
+        <div class="galeria-imagenes">
+            <img src="imagenes/imagen1.jpg" alt="Imagen 1" onerror="this.style.backgroundColor='black'; this.style.width='300px'; this.style.height='300px'; this.alt='Imagen no encontrada'">
+            <img src="imagenes/imagen2.jpg" alt="Imagen 2" onerror="this.style.backgroundColor='black'; this.style.width='300px'; this.style.height='300px'; this.alt='Imagen no encontrada'">
+            <img src="imagenes/imagen3.jpg" alt="Imagen 3" onerror="this.style.backgroundColor='black'; this.style.width='300px'; this.style.height='300px'; this.alt='Imagen no encontrada'">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

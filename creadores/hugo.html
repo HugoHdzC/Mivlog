@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo - Mi Blog</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Mi Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="../creadores.html">Creadores</a></li>
+                <li><a href="../contactanos.html">Contáctanos</a></li>
+                <li><a href="../galeria.html">Galería</a></li>
+                <li><a href="../descargar.html">Descargar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Perfil de Hugo -->
+    <section>
+        <div class="informacion-contacto">
+            <h2>Hugo</h2>
+        <p>Mi nombre es Hugo, Soy una persona que le gusta esta ocupado haciendo algo siempre, aun que disfruto 
+        <br>cuando tengo dias libres, me gusta mucho ver peliculas y series nuevas, me gusta jugar videojuegos 
+        <br>mi videojuego favorito es fortnite, mi comida favorita es el pozole, me gusta salir pero cuando me 
+        <br>quedo en mi cama disfruto mucho escuchar musica y cantar solo en mi casa, me gusta empezar ideas 
+<br>nuevas y no tengo miedo de fallar en lo que hago.
+
+
+</p>
+
+            <video width="100%" controls>
+                <source src="../imagenes/hugo.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+
+            <!-- Audio con botones de control -->
+            <div class="audio-control">
+                <audio id="audioHugo">
+                    <source src="../imagenes/hugo_song.mp3" type="audio/mp3">
+                    Tu navegador no soporta el audio.
+                </audio>
+                <button onclick="reproducirAudio()">▶️ Play</button>
+                <button onclick="pausarAudio()">⏸️ Pausa</button>
+            </div>
+<p>
+
+            <a href="../creadores.html" class="button">Creadores</a>
+        </div>
+    </section>
+
+    <!-- Script para controlar el audio -->
+    <script>
+        const audio = document.getElementById("audioHugo");
+
+        function reproducirAudio() {
+            audio.play();
+        }
+
+        function pausarAudio() {
+            audio.pause();
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mi Blog - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irving - Mi Blog</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mi Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="../creadores.html">Creadores</a></li>
+                <li><a href="../contactanos.html">Contáctanos</a></li>
+                <li><a href="../galeria.html">Galería</a></li>
+                <li><a href="../descargar.html">Descargar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="informacion-contacto">
+            <h2>Irving</h2>
+            <p>Me llamo Irving, soy un estudiante apasionado por la ropa, me gusta salir con mis amigos y 
+            <br>con mi novia, soy una persona tranquila, con ganas de superarse día a día, soy una persona 
+            <br>activa y paciente. Tengo un pequeño negocio, donde vendo ropa, carpincho.mx es como se llama 
+            <br>mi página en Instagram, va a cumplir un año que la cree, actualmente estudio en el tec y trabajo
+            <br> los fines, mi sueño es llegar a 100k seguidores en mi página y terminar mis estudios.</p>
+
+
+            <video width="100%" controls>
+                <source src="../imagenes/irving.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+
+            <!-- Control de audio -->
+            <div class="audio-control">
+                <audio id="audioIrving">
+                    <source src="../imagenes/irving_song.mp3" type="audio/mp3">
+                    Tu navegador no soporta el audio.
+                </audio>
+                <button onclick="reproducirAudio()">▶️ Play</button>
+                <button onclick="pausarAudio()">⏸️ Pausa</button>
+            </div>
+            <p>
+      
+            <a href="../creadores.html" class="button">Creadores</a>
+        </div>
+    </section>
+
+    <script>
+        const audio = document.getElementById("audioIrving");
+
+        function reproducirAudio() {
+            audio.play();
+        }
+
+        function pausarAudio() {
+            audio.pause();
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Mi Blog - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

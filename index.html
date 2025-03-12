@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog - Vlog de Creadores</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Sección Principal -->
+    <header>
+        <div class="logo">
+            <h1>Mi Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="button">Principal</a></li>
+                <li><a href="creadores.html" class="button">Creadores</a></li>
+                <li><a href="contactanos.html" class="button">Contáctanos</a></li>
+                <li><a href="galeria.html" class="button">Galería</a></li>
+                <li><a href="descargar.html" class="button">Descargar PDF</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bienvenida">
+        <h2>Bienvenido a nuestro Vlog de Creadores</h2>
+        <p>Conoce más sobre nuestros creadores, su música, videos y todo lo que tienen para ti. ¡Explora y disfruta!</p>
+        
+        <!-- Pequeño reproductor de video -->
+        <div style="margin: 0 auto; width: 320px;">
+            <video width="320" height="180" controls>
+                <source src="imagenes/intro.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </section>
+
+    <section class="creadores-introduccion">
+        <h2>Nuestros Creadores</h2>
+        <p>Haz clic en el nombre de uno de nuestros creadores para conocer más sobre ellos:</p>
+        <div class="creadores-lista">
+            <div class="creador">
+                <a href="creadores/hugo.html">
+                    <img src="imagenes/hugo.jpg" alt="Hugo">
+                    <h3>Hugo</h3>
+                </a>
+            </div>
+            <div class="creador">
+                <a href="creadores/yael.html">
+                    <img src="imagenes/yael.jpg" alt="Yael">
+                    <h3>Yael</h3>
+                </a>
+            </div>
+            <div class="creador">
+                <a href="creadores/irving.html">
+                    <img src="imagenes/irving.jpg" alt="Irving">
+                    <h3>Irving</h3>
+                </a>
+            </div>
+            <div class="creador">
+                <a href="creadores/salamanca.html">
+                    <img src="imagenes/salamanca.jpg" alt="Salamanca">
+                    <h3>Salamanca</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
